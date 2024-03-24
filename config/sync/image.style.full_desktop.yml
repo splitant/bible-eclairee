@@ -1,0 +1,15 @@
+uuid: 73dacdfb-db21-4dd6-aa12-a6fb6cdc2c07
+langcode: en
+status: true
+dependencies: {  }
+name: full_desktop
+label: 'Full Desktop (1300)'
+effects:
+  65b25051-bb21-4735-8f78-22f285f60517:
+    uuid: 65b25051-bb21-4735-8f78-22f285f60517
+    id: image_scale
+    weight: 1
+    data:
+      width: 1300
+      height: null
+      upscale: false

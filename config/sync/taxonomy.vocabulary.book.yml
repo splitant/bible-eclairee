@@ -1,0 +1,8 @@
+uuid: 4a009237-1d5a-4406-af06-b4f5e6d734a7
+langcode: en
+status: true
+dependencies: {  }
+name: Book
+vid: book
+description: 'Book bible (Genesis, Job, Matthew, Hebrew, etc...)'
+weight: 0

@@ -1,0 +1,15 @@
+uuid: 2e0efda0-c9b6-4b3f-aa5f-4b3c8e5a3fdb
+langcode: en
+status: true
+dependencies: {  }
+name: card_desktop
+label: 'Card Desktop (300x200)'
+effects:
+  c183e1be-cb92-4de6-a29f-ce0845d5a001:
+    uuid: c183e1be-cb92-4de6-a29f-ce0845d5a001
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: 200
+      anchor: center-center

@@ -1,0 +1,20 @@
+uuid: 64c394a6-ee76-4808-9913-21586ae75a94
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.verse.field_content
+  module:
+    - be_verse
+id: verse.verse.field_content
+field_name: field_content
+entity_type: verse
+bundle: verse
+label: Content
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

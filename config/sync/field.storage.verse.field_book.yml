@@ -1,0 +1,20 @@
+uuid: 9ec948c5-adf0-4adb-97e1-9cd266722176
+langcode: en
+status: true
+dependencies:
+  module:
+    - be_verse
+    - taxonomy
+id: verse.field_book
+field_name: field_book
+entity_type: verse
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

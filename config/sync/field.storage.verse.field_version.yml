@@ -1,21 +1,19 @@
-uuid: 22e9a3b9-d770-4dc9-a271-b79f1923748f
+uuid: 8a7a4b40-dc2e-4739-920c-8d5a7bbc76c8
 langcode: en
 status: true
 dependencies:
   module:
-    - node
+    - be_verse
     - taxonomy
-_core:
-  default_config_hash: WpOE_bs8Bs_HY2ns7n2r__de-xno0-Bxkqep5-MsHAs
-id: node.field_tags
-field_name: field_tags
-entity_type: node
+id: verse.field_version
+field_name: field_version
+entity_type: verse
 type: entity_reference
 settings:
   target_type: taxonomy_term
 module: core
 locked: false
-cardinality: -1
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

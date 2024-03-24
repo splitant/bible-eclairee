@@ -1,0 +1,8 @@
+uuid: fb9807f3-aa7f-4caf-8549-f519c09c4c57
+langcode: en
+status: true
+dependencies: {  }
+name: 'Book version'
+vid: book_version
+description: 'Book version bible (LSG 21, Colombe, Darby, Ostervald, etc...)'
+weight: 0

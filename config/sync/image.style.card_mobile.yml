@@ -1,0 +1,15 @@
+uuid: b29f90ba-9d13-40a7-9802-64e5bb86be95
+langcode: en
+status: true
+dependencies: {  }
+name: card_mobile
+label: 'Card Mobile (460x180)'
+effects:
+  c87807e7-9dd6-41c3-a78f-723f864056b9:
+    uuid: c87807e7-9dd6-41c3-a78f-723f864056b9
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 460
+      height: 180
+      anchor: center-center

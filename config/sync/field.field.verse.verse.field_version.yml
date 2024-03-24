@@ -1,0 +1,30 @@
+uuid: 99c30a36-93a9-423a-8ab2-3b868d3b1200
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.verse.field_version
+    - taxonomy.vocabulary.book_version
+  module:
+    - be_verse
+id: verse.verse.field_version
+field_name: field_version
+entity_type: verse
+bundle: verse
+label: Version
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      book_version: book_version
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

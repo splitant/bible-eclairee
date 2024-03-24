@@ -1,0 +1,8 @@
+uuid: 0d0fde0d-7375-4d6b-8d5b-119529051ecc
+langcode: en
+status: true
+dependencies: {  }
+name: Thematic
+vid: thematic
+description: 'Thematic tags (Love, Peace, Destiny, etc...)'
+weight: 0

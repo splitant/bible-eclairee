@@ -1,0 +1,30 @@
+uuid: b39c5ccc-386d-4e24-ba0a-e5cf5216007e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.verse.field_book
+    - taxonomy.vocabulary.book
+  module:
+    - be_verse
+id: verse.verse.field_book
+field_name: field_book
+entity_type: verse
+bundle: verse
+label: Book
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      book: book
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,13 @@
+uuid: a1820d25-17f7-4659-9bc0-629459e5c388
+langcode: en
+status: true
+dependencies:
+  module:
+    - be_verse
+_core:
+  default_config_hash: vHcX-j114kLLTeLGaC0-fx46ag5OZ82I7T_odybrzY4
+id: verse_delete_action
+label: 'Delete verses'
+type: verse
+plugin: 'entity:delete_action:verse'
+configuration: {  }

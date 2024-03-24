@@ -1,0 +1,15 @@
+uuid: be7cf60d-5f05-47ce-80a3-0154f1b1a689
+langcode: en
+status: true
+dependencies: {  }
+name: full_mobile
+label: 'Full Mobile (480)'
+effects:
+  93b42988-5bc5-4669-aeee-e928636a7940:
+    uuid: 93b42988-5bc5-4669-aeee-e928636a7940
+    id: image_scale
+    weight: 1
+    data:
+      width: 480
+      height: null
+      upscale: false

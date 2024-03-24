@@ -1,0 +1,13 @@
+uuid: 3eb6c858-4c21-48a4-a70e-605b2edfd3e8
+langcode: en
+status: true
+dependencies:
+  module:
+    - be_verse
+_core:
+  default_config_hash: o1v5rTG3xdDDysMmyl0fPbr-dhPS5fm1JEOn4ZMJXWk
+id: verse_save_action
+label: 'Save verses'
+type: verse
+plugin: 'entity:save_action:verse'
+configuration: {  }

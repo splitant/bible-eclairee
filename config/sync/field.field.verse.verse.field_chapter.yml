@@ -1,0 +1,24 @@
+uuid: 9ab661e6-7667-4f14-b310-24903a16e65f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.verse.field_chapter
+  module:
+    - be_verse
+id: verse.verse.field_chapter
+field_name: field_chapter
+entity_type: verse
+bundle: verse
+label: Chapter
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

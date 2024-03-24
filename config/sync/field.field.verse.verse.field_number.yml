@@ -1,0 +1,24 @@
+uuid: f4ae3826-73ff-44c8-bbb2-6384f40f42be
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.verse.field_number
+  module:
+    - be_verse
+id: verse.verse.field_number
+field_name: field_number
+entity_type: verse
+bundle: verse
+label: Number
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

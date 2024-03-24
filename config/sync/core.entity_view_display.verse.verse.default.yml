@@ -1,0 +1,61 @@
+uuid: a1dced93-e88e-4e89-9f19-b9cd845be911
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.verse.verse.field_book
+    - field.field.verse.verse.field_chapter
+    - field.field.verse.verse.field_content
+    - field.field.verse.verse.field_number
+    - field.field.verse.verse.field_version
+  module:
+    - be_verse
+id: verse.verse.default
+targetEntityType: verse
+bundle: verse
+mode: default
+content:
+  field_book:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_chapter:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_content:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_number:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_version:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  uid: true
