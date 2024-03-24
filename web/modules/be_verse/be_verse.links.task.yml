@@ -1,0 +1,9 @@
+entity.verse.settings:
+  title: 'Settings'
+  route_name: entity.verse.settings
+  base_route: entity.verse.settings
+entity.verse.collection:
+  title: 'Verses'
+  route_name: entity.verse.collection
+  base_route: system.admin_content
+  weight: 10

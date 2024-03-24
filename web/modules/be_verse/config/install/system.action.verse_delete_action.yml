@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - be_verse
+id: verse_delete_action
+label: 'Delete verses'
+type: verse
+plugin: entity:delete_action:verse
+configuration: {  }

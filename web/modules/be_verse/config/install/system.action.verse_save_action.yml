@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - be_verse
+id: verse_save_action
+label: 'Save verses'
+type: verse
+plugin: entity:save_action:verse
+configuration: {  }

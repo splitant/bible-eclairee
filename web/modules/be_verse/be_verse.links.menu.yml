@@ -1,0 +1,11 @@
+entity.verse.settings:
+  title: 'Verse'
+  description: 'Configure a Verse entity type.'
+  route_name:  entity.verse.settings
+  parent: system.admin_structure
+
+entity.verse.collection:
+  title: 'Verses'
+  description: 'List of verses.'
+  route_name: entity.verse.collection
+  parent: system.admin_content

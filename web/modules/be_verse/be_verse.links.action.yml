@@ -1,0 +1,5 @@
+verse.add_form:
+  title: 'Add verse'
+  route_name: entity.verse.add_form
+  appears_on:
+    - entity.verse.collection

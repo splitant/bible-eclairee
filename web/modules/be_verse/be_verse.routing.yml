@@ -1,0 +1,7 @@
+entity.verse.settings:
+  path: 'admin/structure/verse'
+  defaults:
+    _form: '\Drupal\be_verse\Form\VerseSettingsForm'
+    _title: 'Verse'
+  requirements:
+    _permission: 'administer verse'

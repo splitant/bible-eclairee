@@ -1,0 +1,11 @@
+administer verse:
+  title: 'Administer verses'
+  restrict access: true
+view verse:
+  title: 'View verse'
+edit verse:
+  title: 'Edit verse'
+delete verse:
+  title: 'Delete verse'
+create verse:
+  title: 'Create verse'
