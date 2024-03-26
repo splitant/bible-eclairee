@@ -1,0 +1,24 @@
+uuid: ff57ee7e-b421-4a49-85c5-9c601d5e7350
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.full_desktop
+    - image.style.full_mobile
+  theme:
+    - be_theme
+id: image_full
+label: 'Image full'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: full_desktop
+    breakpoint_id: be_theme.desktop
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: full_mobile
+    breakpoint_id: be_theme.mobile
+    multiplier: 1x
+breakpoint_group: be_theme
+fallback_image_style: full_desktop

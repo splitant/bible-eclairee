@@ -1,0 +1,24 @@
+uuid: 6bf661c7-4cb6-4921-b047-fbf33b761ab8
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.card_desktop
+    - image.style.card_mobile
+  theme:
+    - be_theme
+id: image_card
+label: 'Image card'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: card_desktop
+    breakpoint_id: be_theme.desktop
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: card_mobile
+    breakpoint_id: be_theme.mobile
+    multiplier: 1x
+breakpoint_group: be_theme
+fallback_image_style: card_mobile
