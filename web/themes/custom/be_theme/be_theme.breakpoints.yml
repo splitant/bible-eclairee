@@ -1,0 +1,12 @@
+be_theme.mobile:
+  label: Mobile
+  mediaQuery: 'all and (max-width: 575px)'
+  weight: 0
+  multipliers:
+    - 1x
+be_theme.desktop:
+  label: Desktop
+  mediaQuery: 'all and (min-width: 576px)'
+  weight: 1
+  multipliers:
+    - 1x

@@ -1,15 +1,15 @@
-uuid: a4fa1b58-254c-4875-827a-4838a00faf54
+uuid: 168b34f2-4c7a-4290-823f-e38a1c1b9152
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - olivero
+    - be_theme
 _core:
   default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
-id: olivero_breadcrumbs
-theme: olivero
+id: be_theme_breadcrumbs
+theme: be_theme
 region: breadcrumb
 weight: 0
 provider: null

@@ -1,14 +1,14 @@
-uuid: 70985783-69d8-4ee5-aed1-3e38d36b3c66
+uuid: 26f06e19-5701-47a9-8203-480b72bb6c21
 langcode: en
 status: true
 dependencies:
   theme:
-    - olivero
+    - be_theme
 _core:
   default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
-id: olivero_page_title
-theme: olivero
-region: content_above
+id: be_theme_page_title
+theme: be_theme
+region: header
 weight: -5
 provider: null
 plugin: page_title_block

@@ -1,14 +1,14 @@
-uuid: 285a3fb9-e580-4b4b-a109-d4eb15c385e1
+uuid: d3a4d8ea-4435-4e5c-807d-29b35ef18dc3
 langcode: en
 status: true
 dependencies:
   theme:
-    - olivero
+    - be_theme
 _core:
   default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
-id: olivero_primary_local_tasks
-theme: olivero
-region: highlighted
+id: be_theme_primary_local_tasks
+theme: be_theme
+region: header
 weight: -4
 provider: null
 plugin: local_tasks_block

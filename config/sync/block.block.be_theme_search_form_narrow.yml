@@ -1,15 +1,15 @@
-uuid: ef8a9b46-c591-452b-a707-c65165e0d26d
+uuid: ae33f7ec-0c33-425c-a7b5-e3d1486514df
 langcode: en
 status: true
 dependencies:
   module:
     - search
   theme:
-    - olivero
+    - be_theme
 _core:
   default_config_hash: yEBET0cqDbk8dkWzaJw-8CKft0961VBflsISoSR6Lj8
-id: olivero_search_form_narrow
-theme: olivero
+id: be_theme_search_form_narrow
+theme: be_theme
 region: primary_menu
 weight: -4
 provider: null
