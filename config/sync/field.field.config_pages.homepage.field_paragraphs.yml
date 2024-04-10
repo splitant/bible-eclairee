@@ -1,0 +1,25 @@
+uuid: 9df71858-ba34-4e8b-adf1-2e8ceaf51236
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.homepage
+    - field.storage.config_pages.field_paragraphs
+  module:
+    - entity_reference_revisions
+id: config_pages.homepage.field_paragraphs
+field_name: field_paragraphs
+entity_type: config_pages
+bundle: homepage
+label: Paragraphs
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: null
+    negate: 0
+field_type: entity_reference_revisions
