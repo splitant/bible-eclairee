@@ -1,0 +1,15 @@
+uuid: d7753c05-a986-49bd-a0ee-bce2b63c07b9
+langcode: en
+status: true
+dependencies: {  }
+name: carousel_desktop
+label: 'Carousel Desktop (800x400)'
+effects:
+  b83047b4-6cf0-48a2-8534-20d5ebed9365:
+    uuid: b83047b4-6cf0-48a2-8534-20d5ebed9365
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 800
+      height: 400
+      anchor: center-center

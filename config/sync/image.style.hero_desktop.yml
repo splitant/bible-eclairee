@@ -1,0 +1,15 @@
+uuid: 7c0c2266-8c7e-44d4-b4f5-df36d686007a
+langcode: en
+status: true
+dependencies: {  }
+name: hero_desktop
+label: 'Hero Desktop (700x500)'
+effects:
+  64d258f6-c251-4870-8a8f-962ba107e341:
+    uuid: 64d258f6-c251-4870-8a8f-962ba107e341
+    id: image_scale
+    weight: 1
+    data:
+      width: 700
+      height: 500
+      upscale: false

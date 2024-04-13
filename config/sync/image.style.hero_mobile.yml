@@ -1,0 +1,15 @@
+uuid: b0e28fd5-a167-45ff-b0fe-3c370fcfb464
+langcode: en
+status: true
+dependencies: {  }
+name: hero_mobile
+label: 'Hero Mobile (450x320)'
+effects:
+  1546c752-dea5-4f53-a1fa-1f80ce4855e4:
+    uuid: 1546c752-dea5-4f53-a1fa-1f80ce4855e4
+    id: image_scale
+    weight: 1
+    data:
+      width: 450
+      height: 320
+      upscale: false

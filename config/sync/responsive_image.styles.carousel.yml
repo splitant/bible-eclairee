@@ -1,0 +1,24 @@
+uuid: bf73522f-4e5f-44fc-b6d1-a4014a6af6fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.carousel_desktop
+    - image.style.carousel_mobile
+  theme:
+    - be_theme
+id: carousel
+label: Carousel
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: carousel_desktop
+    breakpoint_id: be_theme.desktop
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: carousel_mobile
+    breakpoint_id: be_theme.mobile
+    multiplier: 1x
+breakpoint_group: be_theme
+fallback_image_style: carousel_mobile
