@@ -5,6 +5,8 @@ dependencies:
   config:
     - filter.format.restricted_html
   module:
+    - be_verse
+    - config_pages
     - filter
     - media
     - search
@@ -19,4 +21,6 @@ permissions:
   - 'access content'
   - 'search content'
   - 'use text format restricted_html'
+  - 'view homepage config page entity'
   - 'view media'
+  - 'view verse'

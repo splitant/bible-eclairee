@@ -1,0 +1,24 @@
+uuid: 282a6f06-4d28-4176-bd5c-4d17bcc16914
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - filter.format.full_html
+    - node.type.highlight_passage
+  module:
+    - text
+id: node.highlight_passage.field_description
+field_name: field_description
+entity_type: node
+bundle: highlight_passage
+label: Description
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

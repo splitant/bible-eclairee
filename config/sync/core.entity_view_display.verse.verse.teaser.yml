@@ -1,8 +1,9 @@
-uuid: a1dced93-e88e-4e89-9f19-b9cd845be911
+uuid: abcdf070-5e25-45c9-834f-613e07ff51f9
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.verse.teaser
     - field.field.verse.verse.field_book
     - field.field.verse.verse.field_chapter
     - field.field.verse.verse.field_content
@@ -10,10 +11,10 @@ dependencies:
     - field.field.verse.verse.field_version
   module:
     - be_verse
-id: verse.verse.default
+id: verse.verse.teaser
 targetEntityType: verse
 bundle: verse
-mode: default
+mode: teaser
 content:
   field_book:
     type: entity_reference_label

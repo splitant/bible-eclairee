@@ -1,0 +1,29 @@
+uuid: 2a061cc1-9290-4e04-aed6-0007cf00d526
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_thematics
+    - node.type.highlight_verse
+    - taxonomy.vocabulary.thematic
+id: node.highlight_verse.field_thematics
+field_name: field_thematics
+entity_type: node
+bundle: highlight_verse
+label: Thematics
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      thematic: thematic
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

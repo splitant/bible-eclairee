@@ -1,0 +1,24 @@
+uuid: 19e93c56-2deb-46e7-9f04-26a9d484e741
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_accordion_item_text
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.accordion_item
+  module:
+    - text
+id: paragraph.accordion_item.field_accordion_item_text
+field_name: field_accordion_item_text
+entity_type: paragraph
+bundle: accordion_item
+label: 'Accordion item text'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

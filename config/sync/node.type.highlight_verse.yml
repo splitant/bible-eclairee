@@ -1,0 +1,17 @@
+uuid: 89c00ab2-4c23-42c9-86d3-4a1bfec9ee37
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Highlight verse'
+type: highlight_verse
+description: ''
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

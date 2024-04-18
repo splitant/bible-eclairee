@@ -1,0 +1,11 @@
+uuid: 8bc0425a-1e74-4444-b55f-742e703deddf
+langcode: en
+status: true
+dependencies:
+  module:
+    - be_verse
+id: verse.teaser
+label: Teaser
+description: ''
+targetEntityType: verse
+cache: true

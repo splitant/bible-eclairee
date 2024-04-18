@@ -1,0 +1,38 @@
+uuid: 94cd09ee-f06e-483c-a573-8ac7f769aa98
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.highlight_verse.field_image
+    - field.field.node.highlight_verse.field_thematics
+    - field.field.node.highlight_verse.field_verse
+    - node.type.highlight_verse
+  module:
+    - user
+id: node.highlight_verse.teaser
+targetEntityType: node
+bundle: highlight_verse
+mode: teaser
+content:
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: card
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_verse:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_thematics: true
+  links: true

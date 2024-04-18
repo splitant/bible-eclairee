@@ -1,0 +1,40 @@
+uuid: a633c28e-8a2f-4f28-8836-ecec63f0db52
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.highlight_passage.field_description
+    - field.field.node.highlight_passage.field_image
+    - field.field.node.highlight_passage.field_thematics
+    - field.field.node.highlight_passage.field_verses
+    - node.type.highlight_passage
+  module:
+    - text
+    - user
+id: node.highlight_passage.teaser
+targetEntityType: node
+bundle: highlight_passage
+mode: teaser
+content:
+  field_description:
+    type: text_trimmed
+    label: hidden
+    settings:
+      trim_length: 95
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: card
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_thematics: true
+  field_verses: true
+  links: true

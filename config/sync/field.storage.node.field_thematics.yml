@@ -1,0 +1,20 @@
+uuid: 68f43799-6b76-47a7-8a94-0765b1ec6b6c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_thematics
+field_name: field_thematics
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,20 @@
+uuid: ac60545c-b5cc-41cf-897e-e787028c83cb
+langcode: en
+status: true
+dependencies:
+  module:
+    - be_verse
+    - node
+id: node.field_verse
+field_name: field_verse
+entity_type: node
+type: entity_reference
+settings:
+  target_type: verse
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

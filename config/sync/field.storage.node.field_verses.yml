@@ -1,0 +1,20 @@
+uuid: 8a156e97-7e21-4a1f-b287-e8bac3b7415d
+langcode: en
+status: true
+dependencies:
+  module:
+    - be_verse
+    - node
+id: node.field_verses
+field_name: field_verses
+entity_type: node
+type: entity_reference
+settings:
+  target_type: verse
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

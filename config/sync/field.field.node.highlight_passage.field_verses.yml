@@ -1,0 +1,26 @@
+uuid: fa7f1bb1-8e43-49f4-9e61-7cdedcb6207d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_verses
+    - node.type.highlight_passage
+id: node.highlight_passage.field_verses
+field_name: field_verses
+entity_type: node
+bundle: highlight_passage
+label: Verses
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:verse'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+field_type: entity_reference
