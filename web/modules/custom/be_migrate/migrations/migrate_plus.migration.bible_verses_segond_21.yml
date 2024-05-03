@@ -1,0 +1,129 @@
+id: bible_verses_segond_21
+label: JSON feed of Bible verses (Louis Segond 21)
+migration_group: bible
+migration_tags:
+  - bible
+source:
+  plugin: url
+  data_fetcher_plugin: be_migrate_file_bible_verses
+  data_parser_plugin: json
+  urls:
+    - modules/custom/be_migrate/resources/segond_21/1-chroniques.json
+    - modules/custom/be_migrate/resources/segond_21/1-corinthiens.json
+    - modules/custom/be_migrate/resources/segond_21/1-jean.json
+    - modules/custom/be_migrate/resources/segond_21/1-pierre.json
+    - modules/custom/be_migrate/resources/segond_21/1-rois.json
+    - modules/custom/be_migrate/resources/segond_21/1-samuel.json
+    - modules/custom/be_migrate/resources/segond_21/1-thessaloniciens.json
+    - modules/custom/be_migrate/resources/segond_21/1-timothee.json
+    - modules/custom/be_migrate/resources/segond_21/2-chroniques.json
+    - modules/custom/be_migrate/resources/segond_21/2-corinthiens.json
+    - modules/custom/be_migrate/resources/segond_21/2-jean.json
+    - modules/custom/be_migrate/resources/segond_21/2-pierre.json
+    - modules/custom/be_migrate/resources/segond_21/2-rois.json
+    - modules/custom/be_migrate/resources/segond_21/2-samuel.json
+    - modules/custom/be_migrate/resources/segond_21/2-thessaloniciens.json
+    - modules/custom/be_migrate/resources/segond_21/2-timothee.json
+    - modules/custom/be_migrate/resources/segond_21/3-jean.json
+    - modules/custom/be_migrate/resources/segond_21/abdias.json
+    - modules/custom/be_migrate/resources/segond_21/actes.json
+    - modules/custom/be_migrate/resources/segond_21/agee.json
+    - modules/custom/be_migrate/resources/segond_21/amos.json
+    - modules/custom/be_migrate/resources/segond_21/apocalypse.json
+    - modules/custom/be_migrate/resources/segond_21/cantique-des-cantiques.json
+    - modules/custom/be_migrate/resources/segond_21/colossiens.json
+    - modules/custom/be_migrate/resources/segond_21/daniel.json
+    - modules/custom/be_migrate/resources/segond_21/deuteronome.json
+    - modules/custom/be_migrate/resources/segond_21/ecclesiaste.json
+    - modules/custom/be_migrate/resources/segond_21/ephesiens.json
+    - modules/custom/be_migrate/resources/segond_21/esaie.json
+    - modules/custom/be_migrate/resources/segond_21/esdras.json
+    - modules/custom/be_migrate/resources/segond_21/esther.json
+    - modules/custom/be_migrate/resources/segond_21/exode.json
+    - modules/custom/be_migrate/resources/segond_21/ezechiel.json
+    - modules/custom/be_migrate/resources/segond_21/galates.json
+    - modules/custom/be_migrate/resources/segond_21/genese.json
+    - modules/custom/be_migrate/resources/segond_21/habakuk.json
+    - modules/custom/be_migrate/resources/segond_21/hebreux.json
+    - modules/custom/be_migrate/resources/segond_21/jacques.json
+    - modules/custom/be_migrate/resources/segond_21/jean.json
+    - modules/custom/be_migrate/resources/segond_21/jeremie.json
+    - modules/custom/be_migrate/resources/segond_21/job.json
+    - modules/custom/be_migrate/resources/segond_21/joel.json
+    - modules/custom/be_migrate/resources/segond_21/jonas.json
+    - modules/custom/be_migrate/resources/segond_21/josue.json
+    - modules/custom/be_migrate/resources/segond_21/jude.json
+    - modules/custom/be_migrate/resources/segond_21/juges.json
+    - modules/custom/be_migrate/resources/segond_21/lamentations.json
+    - modules/custom/be_migrate/resources/segond_21/levitique.json
+    - modules/custom/be_migrate/resources/segond_21/luc.json
+    - modules/custom/be_migrate/resources/segond_21/malachie.json
+    - modules/custom/be_migrate/resources/segond_21/marc.json
+    - modules/custom/be_migrate/resources/segond_21/matthieu.json
+    - modules/custom/be_migrate/resources/segond_21/michee.json
+    - modules/custom/be_migrate/resources/segond_21/nahum.json
+    - modules/custom/be_migrate/resources/segond_21/nehemie.json
+    - modules/custom/be_migrate/resources/segond_21/nombres.json
+    - modules/custom/be_migrate/resources/segond_21/osee.json
+    - modules/custom/be_migrate/resources/segond_21/philemon.json
+    - modules/custom/be_migrate/resources/segond_21/philippiens.json
+    - modules/custom/be_migrate/resources/segond_21/proverbes.json
+    - modules/custom/be_migrate/resources/segond_21/psaumes.json
+    - modules/custom/be_migrate/resources/segond_21/romains.json
+    - modules/custom/be_migrate/resources/segond_21/ruth.json
+    - modules/custom/be_migrate/resources/segond_21/sophonie.json
+    - modules/custom/be_migrate/resources/segond_21/tite.json
+    - modules/custom/be_migrate/resources/segond_21/zacharie.json
+  item_selector: bible_verses
+  fields:
+    -
+      name: chapter_id
+      label: 'Chapter number'
+      selector: chapter_id
+    -
+      name: verse_id
+      label: 'Verse number'
+      selector: verse_id
+    -
+      name: verse_content
+      label: 'Verse content'
+      selector: verse_content
+    -
+      name: book_name
+      label: 'Verse book name'
+      selector: book_name
+    -
+      name: book_version_code
+      label: 'Verse book version code'
+      selector: book_version_code
+  ids:
+    book_version_code:
+      type: string
+    book_name:
+      type: string
+    chapter_id:
+      type: integer
+    verse_id:
+      type: integer
+process:
+  field_chapter: chapter_id
+  field_number: verse_id
+  field_content: verse_content
+  field_book:
+    plugin: migration_lookup
+    migration: bible_books
+    source: book_name
+  field_version:
+    plugin: migration_lookup
+    migration: bible_versions
+    source: book_version_code
+destination:
+  plugin: 'entity:verse'
+migration_dependencies:
+  required:
+    - book_versions
+    - bible_books
+dependencies:
+  enforced:
+    module:
+      - be_migrate

@@ -1,0 +1,37 @@
+id: bible_books
+label: JSON feed of Bible books
+migration_group: bible
+migration_tags:
+  - bible
+source:
+  plugin: url
+  data_fetcher_plugin: be_migrate_file_bible_books
+  data_parser_plugin: json
+  urls:
+    - modules/custom/be_migrate/resources/bible_books.json
+  item_selector: bible_books
+  fields:
+    -
+      name: book_name
+      label: 'Bible book name'
+      selector: book_name
+    -
+      name: book_order
+      label: 'Bible book order'
+      selector: book_order
+  ids:
+    book_name:
+      type: string
+process:
+  vid:
+    plugin: default_value
+    default_value: book
+  name: book_name
+  field_order: book_order
+destination:
+  plugin: 'entity:taxonomy_term'
+migration_dependencies: {  }
+dependencies:
+  enforced:
+    module:
+      - be_migrate

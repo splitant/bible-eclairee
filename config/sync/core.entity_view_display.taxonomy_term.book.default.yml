@@ -1,0 +1,31 @@
+uuid: f8232732-48b1-444d-acc7-2b047cabb8de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.book.field_order
+    - taxonomy.vocabulary.book
+  module:
+    - text
+id: taxonomy_term.book.default
+targetEntityType: taxonomy_term
+bundle: book
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_order:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

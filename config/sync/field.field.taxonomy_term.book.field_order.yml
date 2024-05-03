@@ -1,0 +1,23 @@
+uuid: 3d4b5e7d-a207-4d1c-8d95-d2895de4c9ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_order
+    - taxonomy.vocabulary.book
+id: taxonomy_term.book.field_order
+field_name: field_order
+entity_type: taxonomy_term
+bundle: book
+label: Order
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

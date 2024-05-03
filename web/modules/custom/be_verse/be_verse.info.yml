@@ -1,5 +1,5 @@
 name: 'Bible eclairee - Verse'
 type: module
-description: '@todo Add description.'
-package: '@todo Add package'
+description: 'Manage verse entity'
+package: be
 core_version_requirement: ^10

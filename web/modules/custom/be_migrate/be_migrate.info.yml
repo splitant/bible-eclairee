@@ -1,0 +1,8 @@
+name: 'Bible eclairee - Migrate'
+type: module
+description: 'Module to manage verses migrations.'
+package: be
+core_version_requirement: ^10
+dependencies:
+  - migrate_tools:migrate_tools
+  - migrate_plus:migrate_plus

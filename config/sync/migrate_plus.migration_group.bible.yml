@@ -1,0 +1,10 @@
+uuid: 0ead227e-a31e-487b-8908-0c1f29c7d55b
+langcode: en
+status: true
+dependencies: {  }
+id: bible
+label: bible
+description: ''
+source_type: null
+module: null
+shared_configuration: null

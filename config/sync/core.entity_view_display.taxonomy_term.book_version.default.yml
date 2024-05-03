@@ -1,0 +1,30 @@
+uuid: e2be2e66-a507-475b-87e0-1f3db0330f7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.book_version.field_code_version
+    - taxonomy.vocabulary.book_version
+  module:
+    - text
+id: taxonomy_term.book_version.default
+targetEntityType: taxonomy_term
+bundle: book_version
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_code_version:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

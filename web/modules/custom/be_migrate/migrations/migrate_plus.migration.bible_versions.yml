@@ -1,0 +1,37 @@
+id: bible_versions
+label: JSON feed of Bible versions
+migration_group: bible
+migration_tags:
+  - bible
+source:
+  plugin: url
+  data_fetcher_plugin: be_migrate_file_bible_versions
+  data_parser_plugin: json
+  urls:
+    - modules/custom/be_migrate/resources/bible_versions.json
+  item_selector: bible_versions
+  fields:
+    -
+      name: version_code
+      label: 'Bible version code'
+      selector: version_code
+    -
+      name: version_name
+      label: 'Bible version name'
+      selector: version_name
+  ids:
+    version_code:
+      type: string
+process:
+  vid:
+    plugin: default_value
+    default_value: book_version
+  name: version_name
+  field_code_version: version_code
+destination:
+  plugin: 'entity:taxonomy_term'
+migration_dependencies: {  }
+dependencies:
+  enforced:
+    module:
+      - be_migrate
