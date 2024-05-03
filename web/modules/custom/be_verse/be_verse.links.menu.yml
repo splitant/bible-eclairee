@@ -7,5 +7,5 @@ entity.verse.settings:
 entity.verse.collection:
   title: 'Verses'
   description: 'List of verses.'
-  route_name: entity.verse.collection
+  route_name: view.verses_list.back_office
   parent: system.admin_content

@@ -4,6 +4,6 @@ entity.verse.settings:
   base_route: entity.verse.settings
 entity.verse.collection:
   title: 'Verses'
-  route_name: entity.verse.collection
+  route_name: view.verses_list.back_office
   base_route: system.admin_content
   weight: 10
