@@ -6,3 +6,4 @@ name: 'Book version'
 vid: book_version
 description: 'Book version bible (LSG 21, Colombe, Darby, Ostervald, etc...)'
 weight: 0
+new_revision: false

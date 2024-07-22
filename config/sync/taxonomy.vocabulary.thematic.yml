@@ -6,3 +6,4 @@ name: Thematic
 vid: thematic
 description: 'Thematic tags (Love, Peace, Destiny, etc...)'
 weight: 0
+new_revision: false
