@@ -1,0 +1,31 @@
+uuid: 94eb02c4-a9a6-4c6d-b672-203dbcb42b2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.be_entity_browser
+  module:
+    - views
+name: verses_list
+label: 'Verses list'
+display: modal
+display_configuration:
+  width: '750'
+  height: '500'
+  link_text: 'Select entities'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: single
+widget_selector_configuration: {  }
+widgets:
+  ce689370-f991-492b-b48c-301a88ff9397:
+    id: view
+    uuid: ce689370-f991-492b-b48c-301a88ff9397
+    label: view
+    weight: 1
+    settings:
+      submit_text: 'Select entities'
+      auto_select: false
+      view: be_entity_browser
+      view_display: entity_browser
