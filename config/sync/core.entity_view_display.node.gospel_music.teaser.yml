@@ -1,0 +1,39 @@
+uuid: b7b0f208-fe28-4caa-b7b5-f639e727cf95
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.gospel_music.field_artist
+    - field.field.node.gospel_music.field_lyrics
+    - field.field.node.gospel_music.field_thematics
+    - field.field.node.gospel_music.field_video
+    - node.type.gospel_music
+  module:
+    - user
+id: node.gospel_music.teaser
+targetEntityType: node
+bundle: gospel_music
+mode: teaser
+content:
+  field_artist:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_video:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_lyrics: true
+  field_thematics: true
+  links: true

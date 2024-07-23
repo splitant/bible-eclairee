@@ -1,0 +1,33 @@
+uuid: cc55b77c-7ff4-44cd-88a0-a0a5c73a974a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cards
+    - node.type.gospel_music
+    - node.type.highlight_passage
+    - node.type.highlight_verse
+    - paragraphs.paragraphs_type.carousel
+id: paragraph.carousel.field_cards
+field_name: field_cards
+entity_type: paragraph
+bundle: carousel
+label: Cards
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      gospel_music: gospel_music
+      highlight_passage: highlight_passage
+      highlight_verse: highlight_verse
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: gospel_music
+field_type: entity_reference

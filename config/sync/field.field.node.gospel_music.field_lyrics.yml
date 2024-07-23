@@ -1,0 +1,24 @@
+uuid: dd863781-6337-4c1a-87b3-e6429a80495d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lyrics
+    - filter.format.full_html
+    - node.type.gospel_music
+  module:
+    - text
+id: node.gospel_music.field_lyrics
+field_name: field_lyrics
+entity_type: node
+bundle: gospel_music
+label: Lyrics
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

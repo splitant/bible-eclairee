@@ -1,0 +1,29 @@
+uuid: 114cebf8-850d-467e-ade8-e078e867c6a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_thematics
+    - node.type.gospel_music
+    - taxonomy.vocabulary.thematic
+id: node.gospel_music.field_thematics
+field_name: field_thematics
+entity_type: node
+bundle: gospel_music
+label: Thematics
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      thematic: thematic
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

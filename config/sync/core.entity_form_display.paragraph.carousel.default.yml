@@ -1,0 +1,41 @@
+uuid: c6966e8d-25ef-4557-a59e-6e869597e254
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.nodes_list
+    - field.field.paragraph.carousel.field_cards
+    - field.field.paragraph.carousel.field_title
+    - paragraphs.paragraphs_type.carousel
+  module:
+    - entity_browser
+id: paragraph.carousel.default
+targetEntityType: paragraph
+bundle: carousel
+mode: default
+content:
+  field_cards:
+    type: entity_browser_entity_reference
+    weight: 1
+    region: content
+    settings:
+      entity_browser: nodes_list
+      field_widget_display: label
+      field_widget_edit: false
+      field_widget_remove: true
+      field_widget_replace: false
+      open: false
+      field_widget_display_settings: {  }
+      selection_mode: selection_append
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

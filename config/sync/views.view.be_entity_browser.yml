@@ -16,7 +16,7 @@ dependencies:
     - taxonomy
     - user
 id: be_entity_browser
-label: 'Be - Entity browser'
+label: 'Verse - Entity browser'
 module: views
 description: ''
 tag: ''
