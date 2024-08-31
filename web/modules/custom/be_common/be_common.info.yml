@@ -1,0 +1,7 @@
+name: 'Bible eclairee - Common'
+type: module
+description: 'Main module'
+package: be
+core_version_requirement: ^10
+dependencies:
+  - config_pages:config_pages

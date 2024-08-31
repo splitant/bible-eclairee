@@ -2,13 +2,13 @@ _core:
   default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
 langcode: en
 uuid: d55683fc-08b7-4632-a124-205b5179d8fd
-name: 'Drush Site-Install'
-mail: admin@example.com
-slogan: ''
+name: 'Bible éclairée'
+mail: noreply@bible-eclairee.com
+slogan: 'Receuil des passages bibliques marquants et répertoire musical chrétien'
 page:
   403: ''
   404: ''
-  front: /node
+  front: /home
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en

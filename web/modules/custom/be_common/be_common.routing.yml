@@ -1,0 +1,7 @@
+be_common.homepage:
+  path: '/home'
+  defaults:
+    _controller: '\Drupal\be_common\Controller\HomepageController'
+    _title_callback: '\Drupal\be_common\Controller\HomepageController::title'
+  requirements:
+    _access: 'TRUE'

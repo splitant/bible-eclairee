@@ -1,0 +1,41 @@
+uuid: 26a824d5-0ace-4179-884d-874c6b9cd981
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.nodes_list
+    - field.field.paragraph.cards.field_cards
+    - field.field.paragraph.cards.field_title
+    - paragraphs.paragraphs_type.cards
+  module:
+    - entity_browser
+id: paragraph.cards.default
+targetEntityType: paragraph
+bundle: cards
+mode: default
+content:
+  field_cards:
+    type: entity_browser_entity_reference
+    weight: 1
+    region: content
+    settings:
+      entity_browser: nodes_list
+      field_widget_display: label
+      field_widget_edit: false
+      field_widget_remove: true
+      field_widget_replace: false
+      open: false
+      field_widget_display_settings: {  }
+      selection_mode: selection_append
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
